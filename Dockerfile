@@ -15,4 +15,4 @@ RUN apk update \
 VOLUME /app
 WORKDIR /app
 
-ENTRYPOINT ["/usr/local/sbin/hugo"]
+ENTRYPOINT ["/usr/local/sbin/hugo", "-s", "/app" ]
